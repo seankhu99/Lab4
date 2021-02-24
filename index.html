@@ -6,38 +6,57 @@
 	</head>
 	<body>
 		<h1>Volunteer Form</h1>
-			<form method = "POST" action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php>
-				<h3>My info</h3>
-				<fieldset>
-					<div>
-						<label>First Name: <input type="text" name="first_name_field" placeholder="First Name"></label>
-					</div>
-					<div>
-						<label>Last Name: <input type="text" name="last_name_field" placeholder="Last Name"></label>
-					</div>
-					<div>
-						<label>Phone Number: <input type="text" name="phone_field" placeholder="Phone Number"></label>
-					</div>
-					<div>
-						<label>Email Address: <input type="text" name="email_field" placeholder="Email Address"></label>
-					</div>
-					<div>
-						<label>Phone Number: <input type="text" name="phone_field" placeholder="Phone Number"></label>
-					</div>
-					<div>
-						<label>Gender: <input type="radio" name="gender_field" value="Male">Male</label>
-						<label<input type="radio" name="gender_field" value="female">Female</label>
-					</div>
-					<div>
-						<label>Age: <select name="age_field">
-							<option value ="Under 18"> Under 18</option>
-							<option value ="18-24"> 18-24</option>
-							<option value ="25-34"> 25-34</option>
-							<option value ="35-44"> 35-44</option>
-							<option value ="45-54"> 45-54</option>
-							<option value ="55-64"> 55-64</option>
-							<option value ="65 and over"> 65 and over</option>
-						</select></label>
-					</div>
+			<form method ="POST" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+				<h3>My Info</h3>
+					<fieldset>
+						<div>
+							<label>First Name: <input type="text" name="first_name_field" placeholder="First Name"></label>
+						</div>
+						<div>
+							<label>Last Name: <input type="text" name="last_name_field" placeholder="Last Name"></label>
+						</div>
+						<div>
+							<label>Phone Number: <input type="text" name="phone_field" placeholder="Phone Number"></label>
+						</div>
+						<div>
+							<label>Email Address: <input type="text" name="email_field" placeholder="Email Address"></label>
+						</div>
+						<div>
+							<label>Gender: <input type="radio" name="gender_field" value="Male">Male</label>
+						<label><input type="radio" name="gender_field" value="female">Female</label>
+						</div>
+						<div>
+							<label>Age: <select name="age_field">
+								<option value ="Under 18"> Under 18</option>
+								<option value ="18-24"> 18-24</option>
+								<option value ="25-34"> 25-34</option>
+								<option value ="35-44"> 35-44</option>
+								<option value ="45-54"> 45-54</option>
+								<option value ="55-64"> 55-64</option>
+								<option value ="65 and over"> 65 and over</option>
+							</select></label>
+						</div>
+					</fieldset>
+				<h3>My Availability</h3>
+					<fieldset>
+						<div>
+							<label>Sunday: <input type="checkbox" name="available_field[]" value="Sunday"></label>
+							<label>Monday: <input type="checkbox" name="available_field[]" value="Monday"></label>
+							<label>Tuesday: <input type="checkbox" name="available_field[]" value="Tuesday"></label>
+							<label>Wednesday: <input type="checkbox" name="available_field[]" value="Wednesday"></label>
+							<label>Thursday: <input type="checkbox" name="available_field[]" value="Thursday"></label>
+							<label>Friday: <input type="checkbox" name="available_field[]" value="Friday"></label>
+							<label>Saturday: <input type="checkbox" name="available_field[]" value="Saturday"></label>
+						</div>
+						<div>
+							<h4><label for="comments_field">Any Comments?</label></h4>
+							<textarea cols="30" rows="10" name="comments_field" placeholder="Type your comment or additional information here" id="comments_field"></textarea>
+						</div>
+						<div>
+							<input type="hidden" name="hidden_field" value="skhuon1">
+						</div>
+					</fieldset>
+					<input type="submit" value="Send Me">
+			</form>
 	</body>
 </html>
